@@ -1,4 +1,3 @@
-require("dotenv").config();
 const express = require('express');
 const app = express();
 const server = require("http").createServer(app);
@@ -11,6 +10,8 @@ const authRoutes = require('./routes/authRoutes');
 const productRoutes = require('./routes/productRoutes');
 const connection = require('./config/db')
 const { errorHandler } = require("./middleware/errorHandler");
+
+dotenv.config();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
