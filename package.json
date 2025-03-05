@@ -4,7 +4,7 @@
   "description": "Nodejs and express",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "Sneha Singh",
